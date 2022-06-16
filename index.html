@@ -440,15 +440,14 @@
 <div class="e-mail-block">
     <h3 class="footer-title title">Подпишитесь на рассылку</h3>
 
-    <ul class="e-mail-list">
-        <li>
-<p class="e-mail">E-mail</p>
-        </li>
+    <form class="e-mail-form" autocomplete="on">
+        <label class="email">
+         <span class="label-hidden">E-mail</span>
+        <input class="field"  type="email" name="email" placeholder=" E-mail" >
+        </label>
+        <button class="button-subscribe" type="submit">Подписаться</button>
 
-        <li>
-            <button class="button-subscribe" type="button">Подписаться</button>
-        </li>
-    </ul>
+    </form>
 </div>
 </div>
         </div>
@@ -469,3 +468,5 @@
     <script src="./js/modal.js"></script>
 </body>
 </html>
+
+
