@@ -460,7 +460,6 @@
 <!-- Модальное окно -->
     <div data-modal class="backdrop is-hidden" data-backdrop>
         <div class="modal" data-modal>
-            <p></p>
             <button data-modal-close class="close-btn" data-close-modal>
                 <svg class="close" width="11" height="11">
                     <use href="./images/sprite-new.svg#icon-close"></use>
@@ -471,10 +470,11 @@
     <div class="form-wrapper">
 <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
     <form class="form" autocomplete="on">
+        
 <div class="input-wrapper">
     <label class="input-group">
         <span class="input-tag">Имя</span>
-        <input class="input-field" type="text" name="name">
+        <input class="input-field" type="text" name="name" required>
         <svg class="input-icon">
             <use href="./images/sprite-new.svg#icon-person"></use>
         </svg>
@@ -482,7 +482,7 @@
 
     <label class="input-group">
         <span class="input-tag">Телефон</span>
-        <input class="input-field" type="tel" name="tel">
+        <input class="input-field" type="tel" name="tel" required>
         <svg class="input-icon">
             <use href="./images/sprite-new.svg#icon-phone"></use>
         </svg>
@@ -490,7 +490,7 @@
 
     <label class="input-group">
         <span class="input-tag">Почта</span>
-        <input class="input-field" type="email" name="email">
+        <input class="input-field" type="email" name="email" required>
         <svg class="input-icon">
             <use href="./images/sprite-new.svg#icon-email"></use>
         </svg>
@@ -504,14 +504,14 @@
 
 <div class="checkbox-group">
     <label class="checkbox-label">
-        <input class="checkbox-field" type="checkbox" name="consent" value="Соглашаюсь с рассылкой и принимаю Условия договора" checked />
-        
-            <!-- <svg class="checkbox-icon">
-                <use href=""></use>
-            </svg> -->
-
-        <span class="input-tag-checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</span>
-       
+        <input class="checkbox-field" type="checkbox" name="consent" value="Соглашаюсь с рассылкой и принимаю Условия договора" checked required/>
+        <span class="fake">
+        <svg width="11" height="8" fill="black" class="checkbox-icon">
+            <use href="./images/sprite-new.svg#icon-check"></use>
+        </svg>
+</span>
+        <span class="input-tag-checkbox">Соглашаюсь с рассылкой и принимаю <a class="input-link" href="">Условия договора</a></span>
+      
     </label>
 </div>
     <button class="button-send" type="submit">Отправить</button>
