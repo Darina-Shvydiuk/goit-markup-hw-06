@@ -873,9 +873,15 @@ position: absolute;
     margin-right: 8px;
 }
 
+.close-btn:hover .close,
+.close-btn:focus .close {
+    fill:var(--accent-color);
+}
+
 .close {
 width: 11px;
 height: 11px;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-title {
@@ -1077,5 +1083,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .checkbox-field:checked+.fake>svg {
     opacity: 1;
+    
 }
 
